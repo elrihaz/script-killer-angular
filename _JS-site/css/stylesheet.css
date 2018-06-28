@@ -1,0 +1,634 @@
+/************** Typos *********************/
+
+@font-face {
+  font-family: 'bathysphereregular';
+  src: url('https://elrihaz.github.io/script-killer/typos/kickingbird_-_bathysphere-webfont.eot?') format('eot'), url('https://elrihaz.github.io/script-killer/typos/Kickingbird_-_Bathysphere.otf') format('truetype'), url('https://elrihaz.github.io/script-killer/typos/kickingbird_-_bathysphere-webfont.woff') format('woff'), url('https://elrihaz.github.io/script-killer/typos/kickingbird_-_bathysphere-webfont.svg#bathysphereregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gubia_bold_alternateregular';
+  src: url('https://elrihaz.github.io/script-killer/typos/graviton_-_gubiaboldalternate-webfont.eot?') format('eot'), url('https://elrihaz.github.io/script-killer/typos/Graviton_-_GubiaBoldAlternate.otf') format('truetype'), url('https://elrihaz.github.io/script-killer/typos/graviton_-_gubiaboldalternate-webfont.woff') format('woff'), url('https://elrihaz.github.io/script-killer/typos/graviton_-_gubiaboldalternate-webfont.svg#bathysphereregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gubia_regular_alternateRg';
+  src: url('https://elrihaz.github.io/script-killer/typos/graviton_-_gubiaregularalternate-webfont.eot?') format('eot'), url('https://elrihaz.github.io/script-killer/typos/Graviton_-_GubiaRegularAlternate.otf') format('truetype'), url('https://elrihaz.github.io/script-killer/typos/graviton_-_gubiaregularalternate-webfont.woff') format('woff'), url('https://elrihaz.github.io/script-killer/typos/graviton_-_gubiaregularalternate-webfont.svg#gubia_regular_alternateRg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/************** Body / H / P *************/
+
+html,
+body,
+header,
+section,
+div,
+#banniere,
+.row,
+figure,
+iframe,
+img,
+footer,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*word-wrap: break-word;*/
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'bathysphereregular', serif;
+  font-weight: 300;
+  color: darkseagreen;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  font-family: 'gubia_regular_alternateRg', serif;
+  font-size: 1.2em;
+}
+
+
+/***************** Mise en page ********************************/
+
+.row {
+  display: block;
+}
+
+.centrer {
+  justify-content: center;
+  text-align: center;
+}
+
+p.ital,
+span.ital {
+  font-style: italic;
+}
+
+p.gras,
+span.gras {
+  font-family: 'gubia_bold_alternateregular', sans-serif;
+}
+
+.separation {
+  border-bottom: 1px black solid;
+}
+
+.space-10 {
+  margin-top: 10px;
+}
+
+.space-20 {
+  margin-top: 20px;
+}
+
+.space-30 {
+  margin-top: 30px;
+}
+
+.space-50 {
+  margin-top: 50px;
+}
+
+.space-60 {
+  margin-top: 60px;
+}
+
+.space-80 {
+  margin-top: 80px;
+}
+
+.space-100 {
+  margin-top: 100px;
+}
+
+.space-150 {
+  margin-top: 150px;
+}
+
+
+/*********************** BANNIERES ***************************/
+
+#banniere {
+  height: 600px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.ban-accueil {
+  background-image: url("https://elrihaz.github.io/script-killer/images/ban-accueil.jpg");
+}
+
+.ban-bienvenue {
+  background-image: url("https://elrihaz.github.io/script-killer/images/ban-bienvenue.jpg");
+}
+
+.ban-croque {
+  background-image: url("https://elrihaz.github.io/script-killer/images/ban-croque.jpg");
+}
+
+.ban-collabo {
+  background-image: url("https://elrihaz.github.io/script-killer/images/ban-audio.gif");
+}
+
+.ban-audio {
+  background-image: url("https://elrihaz.github.io/script-killer/images/ban-collabo.jpg");
+}
+
+
+/******************* NAVIGATION ******************************/
+
+ul {
+  display: inline-flex;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: 'bathysphereregular', sans-serif;
+  font-size: 1.4em;
+  color: white;
+}
+
+#SK {
+  padding: 5px;
+}
+
+#SK img {
+  height: 50px;
+  width: 50px;
+}
+
+ul li {
+  height: 62px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+ul li.active,
+ul li:hover,
+ul li.active:hover {
+  color: black;
+  background-color: aquamarine;
+  border-bottom: 3px black solid;
+  /*transition: 0.6s;*/
+}
+
+
+/********************* SECTIONS ******************************/
+
+
+/*********************** Fonds *********************/
+
+.fond-SK,
+.fond-audio {
+  background-color: aquamarine;
+}
+
+.fond-bienvenue {
+  background-color: black;
+}
+
+.fond-croque {
+  background-color: #353638;
+}
+
+.fond-collabo {
+  background-color: white;
+}
+
+.cous-bienvenue {
+  background-color: black;
+  color: antiquewhite;
+}
+
+.cous-croque {
+  background-color: #353638;
+  color: white;
+}
+
+/****************** Jimbotrons ***************************/
+
+#SK-jimbos.invisible {
+  display: none;
+}
+
+.jimbos {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-size: cover;
+}
+
+#jimbo-bienvenue,
+#jimbo-croque,
+#jimbo-collabo,
+#jimbo-audio {
+  cursor: pointer;
+}
+
+#jimbo-bienvenue {
+  background-image: url("https://elrihaz.github.io/script-killer/images/ban-bienvenue.jpg");
+}
+
+#jimbo-croque {
+  background-image: url("https://elrihaz.github.io/script-killer/images/ban-croque.jpg");
+}
+
+#jimbo-collabo {
+  background-image: url("https://elrihaz.github.io/script-killer/images/ban-audio.gif");
+}
+
+#jimbo-audio {
+  background-image: url("https://elrihaz.github.io/script-killer/images/ban-audio.gif");
+}
+
+
+/************** Mise en page de section *************************/
+
+.main-SK {
+  height: 600px;
+  color:black;
+}
+
+.main-SK h1,
+.main-SK h2 {
+  color: darkslategrey;
+}
+
+.main-SK p {
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.main-bienvenue {
+  color: white;
+}
+
+.main-SK h1,
+.main-bienvenue h1,
+.main-croque h1,
+.main-autour h1,
+.main-collabo h1 {
+  text-align: center;
+  font-size: 2.3em;
+}
+
+.main-bienvenue p {
+  color: antiquewhite;
+}
+
+.main-croque {
+  color: white;
+}
+
+.main-collabo h2 {
+  text-align: center;
+}
+
+.main-collabo p.intro {
+  padding-left: 16px;
+}
+
+.main-collabo a:link, .main-collabo a:hover, .main-collabo a:visited, .main-collabo a:active, .main-collabo a:focus {
+  text-decoration: none;
+  color: darkseagreen;
+}
+
+.main-collabo .intro span {
+  font-size: 1.4em;
+}
+
+.main-collabo figure p {
+  text-align: justify;
+}
+
+.main-collabo img {
+  height: auto;
+  width: 100%;
+}
+
+
+/************** Mise en page des cousinages *******************/
+
+.cous h2 {
+  font-size: 2.5em;
+  color: antiquewhite;
+}
+
+p.cous-titre {
+  font-family: 'gubia_bold_alternateregular', sans-serif;
+  color: aquamarine;
+  font-size: 1.6em;
+}
+
+.cous p {
+  text-align: justify;
+  padding-left: 20px;
+}
+
+
+/************************* BAS DE PAGE **************************/
+
+footer {
+  height: 440px;
+  background-color: #32333B;
+  padding-top: 60px;
+}
+
+footer p {
+  color: white;
+}
+
+footer a:link, footer a:hover, footer a:visited, footer a:active, footer a:focus {
+  text-decoration: none;
+  color: darkseagreen;
+}
+
+#merci.invisible {
+  display: none;
+}
+
+footer.smallFooter {
+  height: 200px;
+}
+
+
+
+/***********************************************************/
+/*********************** mecanique *************************/
+/***********************************************************/
+
+
+/************* rendre les videos responsive *********/
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*********************** bouton mail ********************/
+
+.cMail {
+  border-radius: 3px;
+  padding-bottom: 6px;
+  padding-top: 9px;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 99999;
+  transition: all ease-in 0.2s;
+  position: fixed;
+  cursor: pointer;
+  bottom: 1em;
+  right: 10px;
+  display:flex;
+}
+
+.cMail:before {
+  content: url("https://elrihaz.github.io/script-killer/images/email.png");
+}
+
+.cMail:hover {
+  background: rgba(0, 0, 0, 1);
+  transition: all ease-in 0.2s;
+}
+
+
+/***********************bouton retour haut********************/
+
+.cRetour {
+  border-radius: 3px;
+  padding: 15px;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 99999;
+  transition: all ease-in 0.2s;
+  position: fixed;
+  cursor: pointer;
+  bottom: 1em;
+  right: 65px;
+  display: none;
+}
+
+.cRetour:before {
+  content: "\25b2";
+}
+
+.cRetour:hover {
+  background: rgba(0, 0, 0, 1);
+  transition: all ease-in 0.2s;
+}
+
+
+/************** PHOTOSWIPE ********************************/
+
+.my-gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.my-gallery figcaption {
+  display: none;
+}
+
+
+
+
+/*****************************************************************/
+/*****************************************************************/
+/******************** Media Queries ******************************/
+/*****************************************************************/
+/*****************************************************************/
+
+
+@media (max-width: 820px) {
+  /**************** Taille typos ******************/
+  h1,
+  h2 {
+    font-weight: 200;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  .main-bienvenue h1,
+  .main-croque h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  p.cous-titre {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  p {
+    font-size: 1em;
+  }
+  /**************** Bannieres *******************/
+  #banniere {
+    justify-content: flex-start;
+    height: 200px;
+  }
+  /**************** Navigation *******************/
+  ul {
+    display: block;
+    width: 145px;
+    font-size: 1em;
+  }
+  ul li {
+    height: 40px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+  #SK {
+    width: 40px;
+    padding: 5px;
+  }
+  #SK img {
+    height: 30px;
+    width: 30px;
+  }
+  /********************   Images de la galerie   ************/
+  div,
+  a img {
+    padding: 10px 0px;
+  }
+  /******************* Sections *********************/
+  /**************** bannieres ******************/
+  .ban-accueil {
+    background-image: url("https://elrihaz.github.io/script-killer/images/ban-accueil-m.jpg");
+  }
+  .ban-bienvenue {
+    background-image: url("https://elrihaz.github.io/script-killer/images/ban-bienvenue-m.jpg");
+  }
+  .ban-croque {
+    background-image: url("https://elrihaz.github.io/script-killer/images/ban-croque-m.jpg");
+  }
+  .ban-collabo {
+    background-image: url("https://elrihaz.github.io/script-killer/images/ban-audio-m.gif");
+  }
+  .ban-audio {
+    background-image: url("https://elrihaz.github.io/script-killer/images/ban-collabo-m.jpg");
+  }
+  /************************ Contenu *******************/
+  .main-SK {
+    padding-top: 30px;
+    margin-bottom: 20px;
+    height: auto;
+    color: black;
+  }
+  .main-SK img {
+    margin-bottom: 10px;
+  }
+  .jimbos {
+    height: 200px;
+  }
+  /********************   Images des portraits et cousinages   ************/
+  .cous img {
+    margin: 0 auto;
+    max-width: 66%;
+    max-height: 66%;
+  }
+  .portrait img {
+    max-width: 33%;
+    max-height: 33%;
+  }
+  /******************** Jimbotrons *******************/
+  #jimbo-SK {
+    background-image: url("https://elrihaz.github.io/script-killer/images/ban-accueil-m.jpg");
+  }
+  #jimbo-bienvenue {
+    background-image: url("https://elrihaz.github.io/script-killer/images/ban-bienvenue-m.jpg");
+  }
+  #jimbo-croque {
+    background-image: url("https://elrihaz.github.io/script-killer/images/ban-croque-m.jpg");
+  }
+  #jimbo-collabo {
+    background-image: url("https://elrihaz.github.io/script-killer/images/ban-audio-m.gif");
+  }
+  #jimbo-audio {
+    background-image: url("https://elrihaz.github.io/script-killer/images/ban-audio-m.gif");
+  }
+  /****************** Bas de page *********************/
+  footer {
+    padding-top: 30px;
+  }
+  /********************   Espaces   *************************/
+  .space-10 {
+    margin-top: 0px;
+  }
+  .space-20 {
+    margin-top: 10px;
+  }
+  .space-30 {
+    margin-top: 10px;
+  }
+  .space-50 {
+    margin-top: 15px;
+  }
+  .space-60 {
+    margin-top: 15px;
+  }
+  .space-80 {
+    margin-top: 20px;
+  }
+  .space-100 {
+    margin-top: 20px;
+  }
+  .space-150 {
+    margin-top: 30px;
+  }
+}
